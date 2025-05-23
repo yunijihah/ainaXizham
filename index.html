@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ainaXizham Wedding</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #fff0f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h1, p {
+      text-align: center;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+    button {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c2185b;
+    }
+    .view-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .view-link a {
+      color: #e91e63;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Our Wedding</h1>
+    <p>Leave us a lovely wish 💖</p>
+
+    <form action="wish.php" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="message">Your Wish</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Wish</button>
+    </form>
+
+    
+  </div>
+</body>
+</html>
